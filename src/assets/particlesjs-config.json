@@ -1,4 +1,3 @@
-
 {
   "particles": {
     "number": {
@@ -12,14 +11,15 @@
       "value": "#ffffff"
     },
     "shape": {
-      "type": "circle",
+      "type": "edge",
       "stroke": {
         "width": 0,
         "color": "#000000"
       },
       "polygon": {
-        "nb_sides": 4
+        "nb_sides": 5
       },
+      
       "image": {
         "src": "img/github.svg",
         "width": 100,
@@ -37,12 +37,12 @@
       }
     },
     "size": {
-      "value": 31.565905665290902,
+      "value": 3,
       "random": true,
       "anim": {
-        "enable": true,
-        "speed": 40.75924075924076,
-        "size_min": 7.1928071928071935,
+        "enable": false,
+        "speed": 40,
+        "size_min": 0.1,
         "sync": false
       }
     },

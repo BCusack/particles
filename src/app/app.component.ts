@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import 
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -24,30 +24,28 @@ export class AppComponent implements OnInit {
     };
 
     this.myParams = {
-
-
       particles: {
-
-        number: {
-          'value': 130,
+        'number': {
+          'value': 80,
           'density': {
             'enable': true,
-            'value_area': 1000
+            'value_area': 800
           }
         },
         color: {
           'value': '#ffffff'
         },
         shape: {
-          'type': 'circle',
+          'type': 'edge',
           'stroke': {
             'width': 0,
             'color': '#000000'
           },
-          'polygon': {
+          polygon: {
             'nb_sides': 5
           },
-          'image': {
+
+          image: {
             'src': 'img/github.svg',
             'width': 100,
             'height': 100
@@ -87,6 +85,7 @@ export class AppComponent implements OnInit {
           'random': false,
           'straight': false,
           'out_mode': 'out',
+          'bounce': false,
           'attract': {
             'enable': false,
             'rotateX': 600,
@@ -99,17 +98,17 @@ export class AppComponent implements OnInit {
         'events': {
           'onhover': {
             'enable': true,
-            'mode': 'grab'
+            'mode': 'repulse'
           },
           onclick: {
             'enable': true,
             'mode': 'push'
           },
-          'resize': true
+          resize: true
         },
         modes: {
           'grab': {
-            'distance': 300,
+            'distance': 400,
             'line_linked': {
               'opacity': 1
             }
@@ -122,9 +121,10 @@ export class AppComponent implements OnInit {
             'speed': 3
           },
           repulse: {
-            'distance': 200
+            'distance': 150,
+            'duration': 0.4
           },
-          push: {
+        push: {
             'particles_nb': 4
           },
           remove: {
@@ -132,15 +132,7 @@ export class AppComponent implements OnInit {
           }
         }
       },
-      retina_detect: true,
-      config_demo: {
-        'hide_card': false,
-        'background_color': '#b61924',
-        'background_image': '',
-        'background_position': '50% 50%',
-        'background_repeat': 'no-repeat',
-        'background_size': 'cover'
-      }
+      'retina_detect': true
     };
   }
 }
